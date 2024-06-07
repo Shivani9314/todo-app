@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4710d3dd32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">To-Do'zzz</h1>
+        <div class="input-box">
+            <i class="fa-regular fa-square-check" onclick="toggleAllButtons()"></i>
+            <input id="input-box" type="text" placeholder="What's need to be done?">
+        </div>
+        <div class="card-container" id="card-container">
+        </div>
+        <div class="all-buttons">
+            <p id="count-item">0 item left</p>
+            <button class="button active" id="all-buttons" onclick="updateList(this,'all')">All</button>
+            <button class="button" id="active-button" onclick="updateList(this, 'active')">Active</button>
+            <button class="button" id="completed-button" onclick="updateList(this , 'completed')">Completed</button>
+            <button class="button" id="clear-button" onclick="deleteAllCompleted()">Clear Completed</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<i class=></i>
