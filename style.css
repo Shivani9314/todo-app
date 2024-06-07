@@ -128,13 +128,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .all-buttons {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     padding: 30px 10px;
     width: 100%;
     border: 1px solid #777474;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
+    margin: auto 0 0 0;
+    border-radius: 10px;
 }
 
 .all-buttons p {
@@ -160,5 +162,96 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     width: 80%;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .input-box i {
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .input-box input {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .all-buttons {
+        padding: 15px 5px;
+        gap: 10px;
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+
+    .all-buttons p{
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+
+    .button {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .edit-task {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .input-box i {
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    .input-box input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .all-buttons {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .edit-task {
+        font-size: 16px;
+    }
+}
+
 
 
