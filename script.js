@@ -176,6 +176,9 @@ input.addEventListener("keydown", (event) => {
         render(tasks);
         input.value = "";
       }
+      else{
+        alert("Please enter something")
+      }
     }
   } catch (error) {
     alert(error);
